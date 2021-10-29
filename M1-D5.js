@@ -96,7 +96,12 @@ console.log(reverseString("Rafael Ferreira"))
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const upperFisrt = function (wordPar){
+    let result = wordPar[0].toUpperCase() + wordPar.slice(1)
+    return result
+}
+
+console.log(upperFisrt("rafael"))
 
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
