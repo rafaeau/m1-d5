@@ -24,7 +24,12 @@ console.log(area(3, 2))
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+const crazySum = function (int1, int2){
+    let result = int1 === int2 ? (int1 + int2) * 3 : int1 + int2
+    return result
+}
+
+console.log(crazySum(2, 2))
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
