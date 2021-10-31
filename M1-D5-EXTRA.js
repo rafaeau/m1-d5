@@ -96,7 +96,18 @@ console.log(maxShoppingCart(shoppingCart)) */
  Create a function called "latestShoppingCart" which receives the shoppingCart array and returns the last item.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let shoppingCart = [
+    {id: 475, name: "Product1", price: 100, quantity: 1},
+    {id: 673, name: "Product2", price: 200, quantity: 1},
+    {id: 983, name: "Product3", price: 50, quantity: 2}
+]
+
+const latestShoppingCart = function (array){
+    lastItem = array[array.length-1]
+    return lastItem
+}
+
+console.log(latestShoppingCart(shoppingCart))
 
 /* EXTRA 6
  Create a function called "loopUntil" which receives an integer x between 0 and 9 as a parameter.
