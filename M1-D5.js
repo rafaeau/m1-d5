@@ -37,7 +37,7 @@ console.log(crazySum(2, 2))
 */
 
 const crazyDiff = function (num){
-    let result = num > 19 ? (num - 19) * 3 : num - 19
+    let result = num > 19 ? Math.abs(num - 19) * 3 : num - 19
     return result
 }
 
@@ -77,6 +77,7 @@ const check3and7 = function (number){
         } else if (number % 7 === 0) {console.log(`${number} is a multiple of 7.`)
         } else {console.log(`${number} is not a multiple of 3 or 7.`)}
     } else {console.log(`${number} is not a positive number, please insert a positive number to continue.`)}
+    return
 }
 
 console.log(check3and7(9))
@@ -121,11 +122,11 @@ const giveMeRandom = function (numberToRandom){
     let arr = []
     for (let i=0; i<=numberToRandom; i++){
     let result = arr.push(Math.floor(Math.random() * numberToRandom))
-    return result
     }
+    return arr
 }
 
-console.log(giveMeRandom(15))
+console.log(giveMeRandom(5))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.

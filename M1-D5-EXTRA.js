@@ -5,7 +5,28 @@
  The function should return the sum of just the numbers bigger than 5.
 */
 
-/* WRITE YOUR ANSWER HERE */
+/* const giveMeRandom = function (numberToRandom){
+    let array = []
+    for (let i=0; i<=numberToRandom; i++){
+    let result = array.push(Math.floor(Math.random() * numberToRandom))
+    }
+    return array
+}
+
+const checkArray = function (arr){
+    arrSum = []
+    for (let i=0; i<arr.length; i++){
+        if (arr[i] > 5){
+            arrSum.push(arr[i]) && console.log(`${arr[i]} is bigger than 5.`)
+        } else if (arr[i] === 5) {
+            console.log(`${arr[i]} equals five.`)
+        } else {console.log(`${arr[i]} is smaller than 5.`)
+        } 
+    } return console.log("The sum of the numbers bigger than five is: " + arrSum.reduce((a, b) => a + b, 0))
+}
+
+console.log(checkArray(giveMeRandom(10))) */
+
 
 /* EXTRA 2
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
