@@ -121,7 +121,7 @@ console.log(cutString("Rafael Ferreira"))
 const giveMeRandom = function (numberToRandom){
     let arr = []
     for (let i=0; i<=numberToRandom; i++){
-    let result = arr.push(Math.floor(Math.random() * numberToRandom))
+    arr.push(Math.floor(Math.random() * numberToRandom))
     }
     return arr
 }

@@ -8,7 +8,7 @@
 /* const giveMeRandom = function (numberToRandom){
     let array = []
     for (let i=0; i<=numberToRandom; i++){
-    let result = array.push(Math.floor(Math.random() * numberToRandom))
+    array.push(Math.floor(Math.random() * numberToRandom))
     }
     return array
 }
@@ -55,7 +55,7 @@ console.log(shoppingCartTotal(shoppingCart)) */
  Create a function called "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
 
-let shoppingCart = [
+/* let shoppingCart = [
     {id: 475, name: "Product1", price: 100, quantity: 1},
     {id: 673, name: "Product2", price: 200, quantity: 1},
     {id: 983, name: "Product3", price: 50, quantity: 2}
@@ -68,14 +68,28 @@ return console.log("The total number of items is now: " + numberOfItems)
 }
 
 product4 = {id: 945, name: "Product4", price: 75, quantity: 1}
-console.log(addToShoppingCart(product4))
+console.log(addToShoppingCart(product4)) */
 
 /* EXTRA 4
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
  Create a function called "maxShoppingCart" which receives the shoppingCart array and returns the most expensive item in it.
 */
 
-/* WRITE YOUR ANSWER HERE */
+/* let shoppingCart = [
+    {id: 475, name: "Product1", price: 100, quantity: 1},
+    {id: 673, name: "Product2", price: 200, quantity: 1},
+    {id: 983, name: "Product3", price: 50, quantity: 2}
+]
+
+const maxShoppingCart = function (array){
+    tempArray=[]
+    for (let i=0; i<array.length; i++){
+       tempArray.push(array[i][2])
+       console.log(Math.max(...tempArray))
+    } return console.log(tempArray)
+}
+
+console.log(maxShoppingCart(shoppingCart)) */
 
 /* EXTRA 5
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
