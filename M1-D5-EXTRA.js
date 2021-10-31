@@ -33,14 +33,42 @@ console.log(checkArray(giveMeRandom(10))) */
  Create a function called "shoppingCartTotal" which calculates the total due to the shop.
 */
 
-/* WRITE YOUR ANSWER HERE */
+/* let shoppingCart = [
+    {id: 475, name: "Product1", price: 100, quantity: 1},
+    {id: 673, name: "Product2", price: 200, quantity: 1},
+    {id: 983, name: "Product3", price: 50, quantity: 2}
+]
+
+const shoppingCartTotal = function (array) {
+    arrSum = []
+    let sum
+    for (let i=0; i<array.length; i++){
+        sum = ((shoppingCart[i][2] * shoppingCart[i][3]) && (arrSum.push(sum)))
+    } result = arrSum.reduce((a, b) => a + b, 0)
+    return result
+}
+
+console.log(shoppingCartTotal(shoppingCart)) */
 
 /* EXTRA 3
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
  Create a function called "addToShoppingCart" which receives a new object, adds it to shoppingCart and returns the total number of items in the shoppingCart.
 */
 
-/* WRITE YOUR ANSWER HERE */
+let shoppingCart = [
+    {id: 475, name: "Product1", price: 100, quantity: 1},
+    {id: 673, name: "Product2", price: 200, quantity: 1},
+    {id: 983, name: "Product3", price: 50, quantity: 2}
+]
+
+const addToShoppingCart = function(objectToAdd){
+    shoppingCart.push(objectToAdd)
+    numberOfItems = shoppingCart.length
+return console.log("The total number of items is now: " + numberOfItems)
+}
+
+product4 = {id: 945, name: "Product4", price: 75, quantity: 1}
+console.log(addToShoppingCart(product4))
 
 /* EXTRA 4
  In your eCommerce you have an array of objects called shoppingCart. Each one of these objects has a price, a name, an id and the quantity to be shipped.
